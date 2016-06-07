@@ -113,9 +113,9 @@ func (s *Service) Run() error {
 	}
 
 	if s.DryRun {
-		s.Logger.Info("Found %d jobs, %d obsolete units can be removed", len(objects), removed)
+		s.Logger.Infof("Found %d jobs, %d obsolete units can be removed", len(objects), removed)
 	} else {
-		s.Logger.Info("Found %d jobs, removed %d obsolete units", len(objects), removed)
+		s.Logger.Infof("Found %d jobs, removed %d obsolete units", len(objects), removed)
 	}
 	return nil
 }
