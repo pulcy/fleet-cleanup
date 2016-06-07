@@ -1,0 +1,5 @@
+{
+	"registry": "pulcy",
+	"image": "fleet-cleanup",
+	"tag-latest": true
+}
